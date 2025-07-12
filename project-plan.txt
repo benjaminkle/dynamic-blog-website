@@ -2,4 +2,8 @@ Project Documenting:
 - Setup GitHub Repository
 - git clone https://github.com/benjaminkle/dynamic-blog-website to local machine
 - Create there main pages including index.html, new-post.html and post.html
+- Styling with CSS 
+- Write JavaScript to perform CRUD 
+- Using git command to pull request and merge files to Git repository
+- Deploy github page and testing function 
 - Create a project documentation text file and commit the initial plan to Git. 
