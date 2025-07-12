@@ -5,19 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dynamic Blog Website</title>
     <link rel="stylesheet" href="style.css" />
-    <script defer src="script.js"></script>
   </head>
   <body>
-    <section class="main-title"><h1>Everyday Blog</h1></section>
+    <section class="main-title">
+      <a href="index.html"
+        ><img src="logo.png" alt="Everyday Blog" class="main-logo"
+      /></a>
+    </section>
 
     <nav class="nav-bar">
       <h2><a href="index.html">HOME</a></h2>
-      <h2><a href="new-post.html">NEW BLOG</a></h2>
-      <h2><a href="posts.html">POSTS</a></h2>
+      <h2><a href="new-post.html">NEW POST</a></h2>
+      <h2><a href="posts.html">BLOGS</a></h2>
     </nav>
-    <section class="all-posts">
-      <h2>All Blog Posts</h2>
-      <div id="postsContainer"></div>
+    <section class="welcome">
+      <h2 class="welcome-description">
+        Welcome to Dynamic Blog — a simple yet powerful platform to share your
+        thoughts. <br />
+        <br />
+        ✍️ Create posts instantly and save them directly in your browser. <br />
+        📝 Edit posts with ease, updating your content anytime. <br />
+        🗑️ Delete posts you no longer need to keep things organized. <br />
+        <br />
+        Your blog is fully dynamic and requires no server — everything is stored
+        in your browser using localStorage. Perfect for quick note-taking or
+        personal journaling!
+      </h2>
     </section>
+    <footer>
+      <h4 class="copyright">&copy 2025 - 2026 KhoaLe. All Rights Reserved</h4>
+    </footer>
   </body>
 </html>
