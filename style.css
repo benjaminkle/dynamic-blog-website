@@ -1,0 +1,176 @@
+/** CSS FRAMEWORK **/
+:root {
+  --main-bg-color: #d6d3e7;
+  --sub-bg-color: #f3f0f7;
+  --main-font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/** GLOBAL SCALING FOR MOBILE DEVICES **/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--main-font-family);
+  margin: 0;
+  padding: 20px;
+  background: var(--main-bg-color);
+  color: #1e2a38;
+}
+
+.main-title {
+  font-size: 25px;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.main-logo {
+  width: 25%;
+}
+.nav-bar {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.welcome {
+  background: var(--sub-bg-color);
+  border-radius: 20px;
+  padding: 90px;
+  max-width: 1100px;
+  min-height: 500px;
+  width: 95%;
+  margin: 20px auto;
+  opacity: 0.8;
+}
+.welcome-description {
+  margin-top: 30px;
+  font-size: 21px;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.all-posts {
+  flex-direction: column;
+  align-items: center;
+  background: var(--sub-bg-color);
+  border-radius: 20px;
+  padding: 70px;
+  max-width: 1100px;
+  min-height: 780px;
+  width: 95%;
+  margin: 20px auto;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  opacity: 0.8;
+  font-size: 19px;
+}
+
+.new-post {
+  flex-direction: column;
+  align-items: center;
+  background: var(--sub-bg-color);
+  border-radius: 20px;
+  padding: 70px;
+  max-width: 1100px;
+  min-height: 780px;
+  width: 95%;
+  margin: 20px auto;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  opacity: 0.8;
+  font-size: 19px;
+}
+
+input {
+  width: 900px;
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 10px;
+  font-family: var(--main-font-family);
+}
+textarea {
+  width: 900px;
+  height: 400px;
+  resize: vertical;
+  overflow: auto;
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 10px;
+  font-family: var(--main-font-family);
+}
+
+/** Responsive Setting for text-area and input**/
+@media screen and (max-width: 1500px) {
+  textarea,
+  input {
+    width: 100%;
+  }
+}
+/* Edit button styling */
+button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  font-size: 17px;
+  background-color: #2066e9;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+  width: 150px;
+  height: 30px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+button:focus {
+  outline: none;
+}
+
+/* Style posted box section (contained in js) */
+.post {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+  transition: box-shadow 0.3s ease;
+  font-size: 18px;
+  font-family: var(--main-font-family);
+  background-color: white;
+}
+
+.post:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Highlight editable fields when in edit mode */
+[contenteditable="true"] {
+  border: 1px solid #254c75;
+  background-color: #f0f8ff;
+  padding: 2px;
+  border-radius: 4px;
+  outline: none;
+}
+
+/* FOOTER */
+.copyright {
+  text-align: center;
+  font-size: 13px;
+  color: var(--subtext-color);
+  font-family: "Lucida Sans";
+  letter-spacing: 2px;
+  user-select: none;
+}
